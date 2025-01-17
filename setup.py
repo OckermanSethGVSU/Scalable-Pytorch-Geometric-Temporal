@@ -14,7 +14,7 @@ install_requires = [
     "pynvml", 
     "tables",
     "dask_pytorch_ddp",
-    "dask[distributed]",
+    "dask distributed",
 ]
 tests_require = ["pytest", "pytest-cov", "mock", "networkx", "tqdm"]
 
