@@ -9,11 +9,18 @@ install_requires = [
     "torch_geometric",
     "numpy",
     "networkx",
+    "dask",
+    "dask[dataframe]",
+    "pynvml", 
+    "tables",
+    "dask_pytorch_ddp"
 ]
 tests_require = ["pytest", "pytest-cov", "mock", "networkx", "tqdm"]
 
 keywords = [
     "machine-learning",
+    "distributed data parallel",
+    "dask",
     "deep-learning",
     "deeplearning",
     "deep learning",
@@ -37,13 +44,13 @@ keywords = [
 setup(
     name="torch_geometric_temporal",
     packages=find_packages(),
-    version="0.54.0",
+    version="1.0.0",
     license="MIT",
-    description="A Temporal Extension Library for PyTorch Geometric.",
-    author="Benedek Rozemberczki",
-    author_email="benedek.rozemberczki@gmail.com",
-    url="https://github.com/benedekrozemberczki/pytorch_geometric_temporal",
-    download_url="https://github.com/benedekrozemberczki/pytorch_geometric_temporal/archive/v0.54.0.tar.gz",
+    description="A distributed and scalability extension Library for PyTorch Geometric Temporal.",
+    author="",
+    author_email="",
+    url="",
+    download_url="",
     keywords=keywords,
     install_requires=install_requires,
     extras_require={
