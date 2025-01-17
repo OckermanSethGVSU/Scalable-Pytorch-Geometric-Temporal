@@ -36,7 +36,7 @@ To run Dask distributed data parallel training, use the following command: `pyth
 | `--mode`             | `-m`       | `str`   | `index`    | Specifies which version of the program to run. Valid options include 'dask', 'index', and 'dask-index'.                     |
 | `--gpu`              | `-g`       | `str`   | `False`    | Indicates whether data should be preprocessed and migrated directly to the GPU. |
 | `--debug`            | `-d`       | `str`   | `False`    | Enables or disables debugging information.                              |
-| `--dist`             |            | `str`   | `False`    | Specifies if computation is distributed across multiple nodes. To do so, we leverage the command line to spawn the following Dask tools: scheduler, client, and workers. For an example, see TODO and for more details, see  [Dask's Documentation](https://docs.dask.org/en/latest/deploying-cli.html)      |
+| `--dist`             |            | `str`   | `False`    | Specifies if computation is distributed across multiple nodes. To do so, we leverage Dask  command line tools to spawn the following Dask constructs: scheduler, client, and workers. For an example, see TODO and for more details, see  [Dask's Documentation](https://docs.dask.org/en/latest/deploying-cli.html)      |
 | `--npar`             | `-np`      | `int`   | `1`        | The number of GPUs or workers per node.                                 |
 | `--dataset`          |            | `str`   | `pems-bay` | Specifies the dataset to use. Valid options include 'pems-bay', 'pems-all-la', and 'pems'.                                |
 
