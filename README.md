@@ -3,7 +3,7 @@
 
 ## Scalable PyTorch Geometric Temporal
 
-This repository is an extension of [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal) designed specifially for memory efficiency, scalability, and distributed training. In particular, we make the following high-level open-source software contributions:
+This repository is an extension of [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal)(PGT) designed specifially for memory efficiency, scalability, and distributed training. In particular, we make the following high-level open-source software contributions:
 
 * Intergrated batching and sequence to sequence prediction into PGT-DCRNN
 * Implemented Dask distributed data parallel DCRNN training
