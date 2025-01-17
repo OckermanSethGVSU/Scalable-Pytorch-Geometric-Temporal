@@ -46,7 +46,7 @@ setup(
     packages=find_packages(),
     version="1.0.0",
     license="MIT",
-    description="A distributed and scalability extension Library for PyTorch Geometric Temporal.",
+    description="A distributed and scalability extension for PyTorch Geometric Temporal.",
     author="",
     author_email="",
     url="",
