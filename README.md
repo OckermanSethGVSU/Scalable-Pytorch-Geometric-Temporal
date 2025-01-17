@@ -15,7 +15,7 @@ This repository is an extension of [PyTorch Geometric Temporal](https://github.c
 --------------------------------------------------------------------------------
 **Reproducibility**
 
-Examples used for testing our methods can be found in the [scalability_testing](TODO) folder. To recreate our experiments, begin by `cd scalability_testing/`
+Examples used for testing our methods can be found in the `scalability_testing` folder. To recreate our experiments, begin by `cd scalability_testing/`
 
 To run single GPU experiments, run the script with the dataset in its name (e.g. `python3 chicken_pox_main.py`). Each script uses the following command-line arguments:
 
@@ -94,5 +94,5 @@ Before deciding to focus on extending Pytorch Geometric Temporal, we modified ST
 
 **License**
 
-TODO
-<!-- - [MIT License](https://github.com/benedekrozemberczki/pytorch_geometric_temporal/blob/master/LICENSE) -->
+
+- [MIT License](TODO: Add after review)
