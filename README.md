@@ -58,7 +58,7 @@ We tested and compared model performance with the following PyTorch Geometric Te
 And we employed the following two larger datasets to test single-GPU scalability and multi-GPU, multi-node distributed DDP training scalability:
 * PeMS-All-LA
 * The full PeMS dataset
----
+
 ---------------------------------------------------------
 **Installation**
 
