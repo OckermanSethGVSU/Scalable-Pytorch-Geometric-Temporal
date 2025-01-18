@@ -63,7 +63,7 @@ def train(args=None, epochs=None, batch_size=None, allGPU=False, debug=False,
     gpu = worker_rank % 4   
     device = f"cuda:{gpu}"
     torch.cuda.set_device(device)
-    
+    world_size = dist.get_world_size()
 
     # print(device)
     
@@ -157,10 +157,10 @@ def train(args=None, epochs=None, batch_size=None, allGPU=False, debug=False,
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 
-    train_sampler = DistributedSampler(train_dataset,  num_replicas=args.npar, rank=worker_rank, shuffle=True)
+    train_sampler = DistributedSampler(train_dataset,  num_replicas=world_size, rank=worker_rank, shuffle=True)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, sampler=train_sampler)
     
-    val_sampler = DistributedSampler(val_dataset, num_replicas=args.npar, rank=worker_rank, shuffle=False)                  
+    val_sampler = DistributedSampler(val_dataset, num_replicas=world_size, rank=worker_rank, shuffle=False)                  
     val_dataloader = DataLoader(val_dataset, batch_size=batch_size, sampler=val_sampler)
     # val_dataloader = DataLoader(val_dataset, batch_size=batch_size)
 
