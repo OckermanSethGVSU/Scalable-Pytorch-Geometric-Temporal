@@ -317,7 +317,7 @@ def main():
     
     elif args.mode == "index":
         futures = dispatch.run(client, train,
-                            args=args, debug=debug, epochs=epochs, batch_size=batch_size,
+                            args=args, debug=debug, epochs=epochs, batch_size=batch_size,allGPU=allGPU,
                             global_start=global_start,
                             backend="gloo")
     
